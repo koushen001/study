@@ -1,4 +1,4 @@
-package com.cike.juc.lock;
+package com.cike.day02.atomic;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -7,13 +7,18 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
+/**
+ * @Description 线程不安全
+ * @Author CIKE
+ * @Version 1.0
+ **/
 @Slf4j
-public class ConcurrencyTest {
+public class CountExample3 {
     //请求总数
     private static final int clientTotal = 5000;
     //同时并发执行的线程数
     private static final int threadTotal = 200;
-    private static int count = 0;
+    private static volatile int count = 0;
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
@@ -38,5 +43,8 @@ public class ConcurrencyTest {
 
     private static void add() {
         count++;
+        //1.读取工作内存中count的值
+        //2.count+1
+        //3.count的值写回主内存
     }
 }
