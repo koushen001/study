@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
  * @Author kou
  * @Version 1.0
  **/
-public class StreamExample {
+public class StreamExample1 {
     public static void main(String args[]) {
         System.out.println("使用 Java 7: ");
 

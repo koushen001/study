@@ -11,7 +11,7 @@ import java.util.function.Predicate;
  * @Author kou
  * @Version 1.0
  **/
-public class FunctionalInterfaceExample {
+public class FunctionalInterfaceExample1 {
     public static void main(String args[]) {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
