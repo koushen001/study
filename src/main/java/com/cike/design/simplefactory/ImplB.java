@@ -1,4 +1,4 @@
-package com.cike.design.simple.factory;
+package com.cike.design.simplefactory;
 
 /**
  * @Description
