@@ -24,3 +24,4 @@ public class RedissonApplication {
         return (Redisson) Redisson.create(config);
     }
 }
+
